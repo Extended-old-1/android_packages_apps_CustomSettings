@@ -59,5 +59,19 @@
     <string name="show_battery_percent_summary">Show battery level percentage near the icon</string>
     <string name="battery_style_category_title">Battery level</string>
 
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Clear all button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button</string>
+    <string name="recents_clear_all_location_title">Clear all location</string>
+    <string name="recents_clear_all_location_top_right">Top right</string>
+    <string name="recents_clear_all_location_top_left">Top left</string>
+    <string name="recents_clear_all_location_top_center">Top center</string>
+    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
+    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+
+    <!-- Header Category Strings-->
+    <string name="fingerprint_category">Fingerprint extra settings</string>
+    <string name="recents_category">Recents FAB</string>
 
 </resources>
