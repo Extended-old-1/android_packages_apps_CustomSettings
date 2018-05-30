@@ -1,5 +1,5 @@
 /*
- * Copyright (C)
+ * Copyright (C) 2016 RR
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@
 package com.custom.settings.preferences;
 
 import android.content.Context;
-import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
+import android.provider.Settings;
 import android.util.AttributeSet;
 
 public class SystemSettingSwitchPreference extends SwitchPreference {
@@ -56,9 +56,10 @@ public class SystemSettingSwitchPreference extends SwitchPreference {
                 getKey(), defaultReturnValue ? 1 : 0) != 0;
     }
 
-    @Override
-    protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
-        setChecked(Settings.System.getString(getContext().getContentResolver(), getKey()) != null ? getPersistedBoolean(isChecked())
-                : (Boolean) defaultValue);
+	@Override
+    protected boolean isPersisted() {
+        // Using getString instead of getInt so we can simply check for null
+        // instead of catching an exception. (All values are stored as strings.)
+        return Settings.System.getString(getContext().getContentResolver(), getKey()) != null;
     }
 }
