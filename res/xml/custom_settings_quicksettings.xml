@@ -18,6 +18,14 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.custom.settings.preferences.CustomSeekBarPreference
+        android:key="qs_panel_alpha"
+        android:title="@string/qs_panel_alpha_title"
+        android:max="255"
+        settings:min="0"
+        settings:units=""
+        android:persistent="false" />
+
     <Preference
         android:key="qs_rows_columns"
         android:fragment="com.custom.settings.QsRowsColumns"
@@ -28,4 +36,5 @@
         android:title="@string/qs_tile_title_visibility_title"
         android:summary="@string/qs_tile_title_visibility_summary"
         android:defaultValue="true" />
+
 </PreferenceScreen>
