@@ -76,6 +76,7 @@
     <string name="ls_item_hide_category">Hide LS items</string>
     <string name="ambient_category">Ambient Extras</string>
     <string name="lock_category">Screen lock options</string>
+    <string name="extra_category">Extra Settings</string>
 
     <!-- Ambient music -->
     <string name="ambient_display_category">Ambient display options</string>
@@ -109,4 +110,9 @@
 
     <!-- QuickSettings Panel Transparency -->
     <string name="qs_panel_alpha_title">Transparency</string>
+
+    <!-- System default animation -->
+    <string name="system_default_animation_title">Android P animation style</string>
+    <string name="system_default_animation_summary">Enable Android P \"Default\" animations</string>
+
 </resources>

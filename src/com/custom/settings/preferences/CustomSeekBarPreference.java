@@ -251,3 +251,4 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         super.setEnabled(enabled);
     }
 }
+
