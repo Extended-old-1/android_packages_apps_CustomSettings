@@ -44,7 +44,6 @@
 
    <!-- Battery Styles -->
     <string name="battery_style_title">Battery icon style</string>
-    <string name="battery_style_summary">Change the look of the icon in the statusbar</string>
     <string name="battery_style_port">Portrait</string>
     <string name="battery_style_land">Landscape</string>
     <string name="battery_style_circle">Circle</string>
@@ -56,8 +55,10 @@
     <string name="battery_style_category">Battery Style</string>
     <string name="battery_bar_category">Battery Bar</string>
     <string name="show_battery_percent_title">Show battery percentage</string>
-    <string name="show_battery_percent_summary">Show battery level percentage near the icon</string>
     <string name="battery_style_category_title">Battery level</string>
+    <string name="battery_percent_none">Don\'t show</string>
+    <string name="battery_percent_outside">Show near icon</string>
+    <string name="battery_percent_inside">Show inside icon</string>
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all button</string>
