@@ -16,7 +16,8 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/quicksettings_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform">
 
     <com.custom.settings.preferences.CustomSeekBarPreference
         android:key="qs_panel_alpha"
@@ -35,6 +36,13 @@
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"
         android:summary="@string/qs_tile_title_visibility_summary"
+        android:defaultValue="true" />
+
+    <com.custom.settings.preferences.LineageSecureSettingListPreference
+        android:key="qs_show_brightness_slider"
+        android:title="@string/qs_brightness_slider_title"
+        android:entries="@array/qs_brightness_slider_entries"
+        android:entryValues="@array/qs_brightness_slider_values"
         android:defaultValue="true" />
 
 </PreferenceScreen>
