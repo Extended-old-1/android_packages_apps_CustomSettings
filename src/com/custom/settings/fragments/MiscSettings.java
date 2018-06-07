@@ -87,7 +87,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
                         valueIndex = mBatteryPercentage.findIndexOfValue(String.valueOf(showPercent));
                         mBatteryPercentage.setSummary(mBatteryPercentage.getEntries()[valueIndex]);
         mBatteryPercentage.setOnPreferenceChangeListener(this);
-        boolean hideForcePercentage = batteryStyle == 6; /*text or hidden style*/
+        boolean hideForcePercentage = batteryStyle == 7; /*text or hidden style*/
         mBatteryPercentage.setEnabled(!hideForcePercentage);
 
     }
@@ -109,7 +109,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
                              .findIndexOfValue((String) newValue);
                      mBatteryIconStyle
                              .setSummary(mBatteryIconStyle.getEntries()[valueIndex]);
-                    boolean hideForcePercentage = value == 6;/*text or hidden style*/
+                    boolean hideForcePercentage = value == 7;/*text or hidden style*/
             mBatteryPercentage.setEnabled(!hideForcePercentage);
             return true;
         } else  if (preference == mBatteryPercentage) {
